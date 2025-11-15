@@ -1,1 +1,1 @@
-{"timestamp": "2025-11-15T09:18:19.890726+00:00", "country": "all", "target_date": "2019-01-02", "y_pred": [1.0], "y_proba": null, "runtime": "00:00:00", "version": 0.1}
+{"timestamp": "2025-11-15T09:28:01.019131+00:00", "country": "all", "target_date": "2019-01-02", "y_pred": [1.0], "y_proba": null, "runtime": "00:00:00", "version": 0.1}
