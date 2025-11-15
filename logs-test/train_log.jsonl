@@ -1,2 +1,2 @@
-{"timestamp": "2025-11-14T19:08:56.652051+00:00", "tag": "all", "start_date": "2017-12-04", "end_date": "2019-05-31", "metrics": {"rmse": 217561}, "runtime": "000:00:01", "version": 0.1, "note": "supervised learing model for time-series"}
-{"timestamp": "2025-11-14T19:08:58.033083+00:00", "tag": "united_kingdom", "start_date": "2017-12-08", "end_date": "2019-05-31", "metrics": {"rmse": 175079}, "runtime": "000:00:01", "version": 0.1, "note": "supervised learing model for time-series"}
+{"timestamp": "2025-11-15T09:18:21.308531+00:00", "tag": "all", "start_date": "2017-11-30", "end_date": "2019-05-25", "metrics": {"rmse": 205896}, "runtime": "000:00:01", "version": 0.1, "note": "supervised learing model for time-series"}
+{"timestamp": "2025-11-15T09:18:22.661980+00:00", "tag": "united_kingdom", "start_date": "2017-11-29", "end_date": "2019-05-30", "metrics": {"rmse": 198686}, "runtime": "000:00:01", "version": 0.1, "note": "supervised learing model for time-series"}

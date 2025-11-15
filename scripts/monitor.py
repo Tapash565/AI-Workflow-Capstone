@@ -124,8 +124,24 @@ def main():
 
     rmse = np.sqrt(np.mean((preds - actuals) ** 2))
     print(f'Found {len(dates)} pairs. RMSE={rmse:.3f}')
-
+    # write a small metrics file alongside the plot so monitoring systems
+    # can ingest numeric summaries (country, RMSE, count, missing)
     out_path = args.out.format(args.country)
+    try:
+        metrics = {
+            'country': args.country,
+            'pairs': int(len(dates)),
+            'rmse': float(rmse),
+            'missing': int(missing)
+        }
+        metrics_path = Path(out_path).with_suffix('.json')
+        metrics_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(metrics_path, 'w', encoding='utf-8') as mh:
+            json.dump(metrics, mh, indent=2)
+        print('Wrote metrics to', metrics_path)
+    except Exception as e:
+        print('Warning: could not write metrics file:', e)
+
     plot_results(dates, actuals, preds, out_path, args.country)
     print('Saved plot to', out_path)
 
