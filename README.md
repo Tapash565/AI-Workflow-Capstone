@@ -1,4 +1,4 @@
-# Solution for *AI in Production* (coursera.org)
+# Solution for *AI in Production*
 
 ## 1. Running the application
 To start this application run the following command:
